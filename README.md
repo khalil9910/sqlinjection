@@ -12,7 +12,7 @@ Run the lab only on an isolated local, host-only, or internal network. It is del
 ## Windows WAMP quick start
 
 1. Start Apache and MySQL or MariaDB in WAMP, and ensure the `pdo_mysql` PHP extension is enabled.
-2. In phpMyAdmin, sign in as an administrative database user, select **Import**, and run [sql/init.sql](sql/init.sql). Re-running it resets the fictitious tables and restores the lab account to `SELECT`-only access.
+2. In phpMyAdmin, sign in as an administrative database user, select **Import**, and run [sql/init.sql](sql/init.sql). This single script creates `sqli_demo`, all three lab tables (`demo_users`, `products`, and `saved_filters`), their seed data, and the read-only lab account. Re-running it resets the fictitious tables and restores the lab account to `SELECT`-only access.
 3. Open the local lab pages:
    - `http://localhost/sqli_dual_lab/public/vulnerable/`
    - `http://localhost/sqli_dual_lab/public/secure/`
